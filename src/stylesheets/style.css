@@ -1,0 +1,190 @@
+/* Font Imports */
+@font-face {
+  font-family: "Dark Idea";
+  src: url(.././assets/fonts/dark-idea.ttf);
+}
+
+@font-face {
+  font-family: "TA Typefire";
+  src: url(.././assets/fonts/ta-typefire.otf);
+}
+
+@import "variables";
+
+/* BASE PAGE STYLES */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+body {
+  background: var(--beige);
+  color: var(--black);
+  min-height: 100%;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  padding: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+}
+h5{
+  font-family: var(--main-font);
+  font-weight: 100;
+}
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: var(--dark-brown);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+}
+
+/* Button styles */
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: var(--dark-brown);
+  border: 2px solid var(--dark-brown);
+  border-radius: 28px;
+  color: var(--beige);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 16px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--dark-brown);
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.8rem;
+  margin: 0 auto;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.logo a,
+.logo a:visited,
+.logo a:hover,
+.logo a:active,
+.logo a:focus {
+  color: var(--beige);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logo .logo--Cake {
+  font-family: "Dark Idea", "Source Sans Pro", sans-serif;
+  margin-bottom: -10px;
+}
+
+.logo .logo--Hub {
+  font-family: "TA Typefire", "Playfair Display", serif;
+  text-transform: lowercase;
+}
+
+/* Message styles */
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.info-message {
+  background: hsla(204, 100%, 26%, 0.95);
+  border: 1px solid hsla(204, 100%, 26%, 0.9);
+  color: hsl(204, 100%, 26%);
+}
+
+noscript .info-message {
+  left: 50%;
+  margin: 0 auto;
+  min-width: 280px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "hero-banner";
