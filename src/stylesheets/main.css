@@ -15,6 +15,10 @@ main .main-content {
   max-width: 1000px;
   padding: 60px 20px 0;
 }
+.custom-toast{
+  background: black;
+  color: white;
+}
 
 main .main-content hr {
   border-bottom: 2.5px var(--dark-brown);
@@ -66,7 +70,7 @@ main .main-content .bold {
 }
 
 .main-content.home .content-container.welcome {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 40px 80px;
@@ -130,8 +134,9 @@ main .main-content .bold {
   }
 }
 
-.margin-top{
+.margint-fonts{
   margin-top: 12px;
+  font-size: 10px;
 }
 
 .main-content.home .content-container.info .info-container:last-child {
@@ -277,6 +282,7 @@ main .main-content .bold {
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
+  color: var(--dark-brown);
 }
 
 @media all and (min-width: 620px) {
@@ -297,4 +303,47 @@ main .main-content .bold {
 .main-content.not-found .button-group {
   display: flex;
   justify-content: center;
+}
+
+.button-21 {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #be8f8f, #593b3b 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 3px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }

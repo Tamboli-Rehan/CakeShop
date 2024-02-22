@@ -1,18 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { useAuth } from "./contexts/authContext";
 
 const Footer = () => {
+  const { userLoggedIn } = useAuth();
+
   return (
     <>
       <footer>
-        <div className="coffee-shop-footer">
+        <div className="cake-shop-footer">
           <Logo />
           <div className="site-links">
             <nav className="links-container">
-              <Link to="about">About</Link>
-              <Link to="menu">Menu</Link>
-              <Link to="visit">Visit</Link>
+              {userLoggedIn ? (
+                <>
+                  <Link to="about">About</Link>
+                  <Link to="menu">Menu</Link>
+                  <Link to="visit">Visit</Link>
+                  <Link to="cart">Cart</Link>
+                </>
+              ) : (
+                <>
+                  <Link to="/">Home</Link>
+                  <Link to="/login">Login</Link>
+                  <Link to="/register">Register</Link>
+                </>
+              )}
             </nav>
           </div>
           <div className="other">
@@ -22,7 +36,8 @@ const Footer = () => {
                 7AM - 8PM
               </p>
               <p className="address">
-                <span className="icon fas fa-map-marker-alt fa-fw"></span> 01 xyz building shop no.10 Cafe Cake Shop
+                <span className="icon fas fa-map-marker-alt fa-fw"></span> 01
+                xyz building shop no.10 Cafe Cake Shop
               </p>
               <p className="phone">
                 <span className="icon fas fa-phone-alt fa-fw"></span>{" "}
@@ -60,7 +75,10 @@ const Footer = () => {
         <hr />
         <div className="app-footer">
           Created by{" "}
-          <a href="https://portfolio-tamboli-rehan.netlify.app/" target="_blank">
+          <a
+            href="https://portfolio-tamboli-rehan.netlify.app/"
+            target="_blank"
+          >
             Tamboli Rehan
           </a>{" "}
           &copy; {new Date().getFullYear()}

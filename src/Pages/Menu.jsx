@@ -3,7 +3,6 @@ import MenuList from "../Components/MenuList";
 import HeroBanner from "../Components/HeroBanner";
 import menuHeroBanner from "../assets/images/menu-hero-banner.jpg";
 import AccordionExpandIcon from "../Components/Accordion";
-import { Style } from "@mui/icons-material";
 import ToppingLists from "../Components/ToppingLists";
 
 const Menu = () => {
@@ -58,23 +57,35 @@ const Menu = () => {
             description={
               "Chocolate ganache, chocolate frosting, chocolate shavings, whipped cream, strawberries, raspberries, or cherries."
             }
-            accordionStyle={{backgroundColor:"black"}}
+            accordionStyle={{ backgroundColor: "black" }}
           />
           {/* Toppings: Chocolate ganache, chocolate frosting, chocolate shavings,
           whipped cream, strawberries, raspberries, or cherries. */}
         </p>
-        <h4>Red Velvet Cake:</h4>
+        <AccordionExpandIcon
+          name={"Red Velvet Cake:"}
+          description={
+            " Description: Red velvet cake is known for its striking red color and velvety texture. It has a hint of cocoa flavor and a slightly tangy taste, thanks to the addition of buttermilk and vinegar."
+          }
+        />
+        {/* <h4>Red Velvet Cake:</h4>
         <h5>
           Description: Red velvet cake is known for its striking red color and
           velvety texture. It has a hint of cocoa flavor and a slightly tangy
           taste, thanks to the addition of buttermilk and vinegar.
-        </h5>
+        </h5> */}
         <MenuList type="Red Velvet Cake" />
         <p className="menu-info">
           Toppings: Cream cheese frosting, chopped nuts (such as pecans or
           walnuts), chocolate curls, or white chocolate shavings.
         </p>
-        <h4>Ice Cake:</h4>
+        {/* <h4>Ice Cake:</h4> */}
+        <AccordionExpandIcon
+          name={"Ice Cake:"}
+          description={
+            " Description: Ice cakes are typically assembled in layers and then frozen until firm. They are often decorated on the outside with whipped cream, frosting, or other toppings. Some ice cakes may also have decorative elements between the layers, such as chocolate shavings or cookie crumbs."
+          }
+        />
         <MenuList type="Ice Cake" />
         <p className="menu-info">
           Free refills available for any of our drip coffees and Nitro Cold

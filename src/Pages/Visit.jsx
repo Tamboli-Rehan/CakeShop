@@ -14,7 +14,7 @@ const Visit = () => {
         <h3>Email</h3>
         <p><a href="mailto:rehan.j.tamboli112@gmail.com">rehan.j.tamboli112@gmail.com</a></p>
         <h3>Location</h3>
-        <p>01 xyz building shop no.10 Cafe Cake Shop</p>
+        <p>01 xyz building shop no.10 Cake Shop</p>
       </section>
     </>
   );

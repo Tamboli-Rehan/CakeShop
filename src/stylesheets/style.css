@@ -78,7 +78,7 @@ textarea:focus,
 
 img {
   display: block;
-  height: auto;
+  height: 100%;
   max-width: 100%;
 }
 
@@ -149,6 +149,12 @@ hr {
 .logo .logo--Cake {
   font-family: "Dark Idea", "Source Sans Pro", sans-serif;
   margin-bottom: -10px;
+}
+.span{
+  font-family: "TA Typefire", "Playfair Display", serif;
+  color: var(--golden-brown);
+  font-weight: 400;
+  font-size: x-large;
 }
 
 .logo .logo--Hub {

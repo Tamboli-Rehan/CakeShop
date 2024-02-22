@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroBanner from '../Components/HeroBanner';
-import aboutHeroBanner from "../assets/images/about-hero-banner.jpg"
+import aboutHeroBanner from "../assets/images/about-hero-bannner.jpg"
 import foundersOurStory from '../assets/images/founders-our-story.jpg';
 import foundersOurMission from '../assets/images/founders-our-mission.jpg';
 

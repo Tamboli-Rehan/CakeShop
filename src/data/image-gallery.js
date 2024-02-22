@@ -1,18 +1,18 @@
 const imageGallery = [
   {
     id: 1,
-    path: require('../assets/images/coffee-grounds.jpg'),
-    alt: 'photo of scoop in a bowl of coffee grounds'
+    path: require('../assets/images/lava-cake.jpg'),
+    alt: 'photo of lava cake'
   },
     {
     id: 2,
-    path: require('../assets/images/barista-pouring-cream.jpg'),
-    alt: 'photo of coffee cup held by a barista who is pouring cream into it off camera'
+    path: require('../assets/images/Black-Currant-Flavour-Cake.jpg'),
+    alt: 'photo of black current cake'
   },
   {
     id: 3,
-    path: require('../assets/images/avocado-toast.jpg'),
-    alt: 'photo of avocado toast on a plate topped with everything bagel seasoning'
+    path: require('../assets/images/red-velvet.webp'),
+    alt: 'photo of red-velvet cake on a plate topped with everything bagel seasoning'
   },
   {
     id: 4,
@@ -26,8 +26,8 @@ const imageGallery = [
   },
   {
     id: 6,
-    path: require('../assets/images/wine-bottles.jpg'),
-    alt: 'photo of a rack of wine bottles'
+    path: require('../assets/images/chocochip-cake.jpg'),
+    alt: 'photo of a chocochip cake'
   },
   {
     id: 7,
@@ -36,8 +36,8 @@ const imageGallery = [
   },
   {
     id: 8,
-    path: require('../assets/images/matcha-latte.jpg'),
-    alt: 'photo of a matcha latte'
+    path: require('../assets/images/beautiful-cake.jpg'),
+    alt: 'photo of a beautiful-cake'
   },
   {
     id: 9,
@@ -46,13 +46,13 @@ const imageGallery = [
   },
   {
     id: 10,
-    path: require('../assets/images/wine-glasses.jpg'),
-    alt: 'photo of two people off camera toasting with two glasses of red wine'
+    path: require('../assets/images/candle-cake.webp'),
+    alt: 'photo of candle cake'
   },
   {
     id: 11,
-    path: require('../assets/images/latte.jpg'),
-    alt: 'photo of barista off camera pouring cream into a latte'
+    path: require('../assets/images/mandarin-cake-shop-bakery.jpg'),
+    alt: 'photo of mandarin-cake-shop-bakery'
   },
   {
     id: 12,
